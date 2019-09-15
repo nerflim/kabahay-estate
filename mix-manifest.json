@@ -1,3 +1,4 @@
 {
-    "/src/App.css": "/src/App.css"
+    "/src/App.css": "/src/App.css",
+    "/src/vendor.compiled.css": "/src/vendor.compiled.css"
 }
