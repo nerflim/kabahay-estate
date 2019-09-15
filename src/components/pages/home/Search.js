@@ -1,13 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 const Search = () => {
+	const [searchType, setSearchType] = useState('buy');
+
+	const searchTypeClass = 'p-1 rounded-full text-sm w-24 text-primary border border-primary hover:bg-white focus:outline-none';
+	const searchTypeActiveClass = 'p-1 mb-1 bg-primary rounded-full text-sm w-24 text-white border border-primary focus:outline-none';
+
 	const submitHandler = () => {
 		console.log('Submit Called');
 	};
 	return (
 		<div className='self-center m-auto container'>
+			<div className='w-8/12 m-auto flex'>
+				<div className='text-center'>
+					<button className={searchType === 'buy' ? searchTypeActiveClass : searchTypeClass} onClick={() => setSearchType('buy')}>
+						Buy
+					</button>
+					{searchType === 'buy' ? <div className='arrow-up m-auto'></div> : null}
+				</div>
+				<div>
+					<button
+						className={searchType === 'rent' ? searchTypeActiveClass + ' mx-5' : searchTypeClass + ' mx-5 '}
+						onClick={() => setSearchType('rent')}>
+						Rent
+					</button>
+					{searchType === 'rent' ? <div className='arrow-up m-auto'></div> : null}
+				</div>
+				<div>
+					<button className={searchType === 'agents' ? searchTypeActiveClass : searchTypeClass} onClick={() => setSearchType('agents')}>
+						Agents
+					</button>
+					{searchType === 'agents' ? <div className='arrow-up m-auto'></div> : null}
+				</div>
+			</div>
 			<form className='w-8/12 m-auto' onSubmit={() => submitHandler()}>
 				<div className='flex'>
 					<div className='rounded-l-full w-10/12 border-primary border border-r-0 overflow-hidden text-gray-500'>
