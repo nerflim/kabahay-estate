@@ -1,4 +1,8 @@
+.homepage {
+	padding-top: 48px;
+}
 .homepage .header {
-	height: 500px;
-	background-color: pink;
+	height: 350px;
+	background-image: url('/img/home-header.jpg');
+	background-color: #cbe8f8;
 }

@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
 const Nav = () => {
-	const [isHome, setIsHome] = useState(window.location.pathname === '/');
-
-	useEffect(() => {
-		console.log(isHome);
-	}, [isHome]);
 	return (
-		<nav className={isHome ? 'bg-transparent p-2 fixed w-full' : 'bg-primary p-2 shadow fixed w-full'}>
+		<nav className='bg-primary p-2 shadow fixed w-full z-50'>
 			<div className='container m-auto flex items-center justify-between flex-wrap'>
 				<div className='flex items-center flex-shrink-0 text-white mr-8'>
 					<svg className='fill-current h-8 w-8 mr-2' width='54' height='54' viewBox='0 0 54 54' xmlns='http://www.w3.org/2000/svg'>
