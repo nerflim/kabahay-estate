@@ -1,41 +1,32 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Search = () => {
 	const [searchType, setSearchType] = useState('buy');
 
-	const searchTypeClass = 'p-1 rounded-full text-sm w-24 text-primary border border-primary hover:bg-white focus:outline-none';
-	const searchTypeActiveClass = 'p-1 mb-1 bg-primary rounded-full text-sm w-24 text-white border border-primary focus:outline-none';
+	const searchTypeClass = 'p-1 rounded-full text-sm w-24 text-primary border border-primary hover:bg-white focus:outline-none capitalize';
+	const searchTypeActiveClass = 'p-1 mb-1 bg-primary rounded-full text-sm w-24 text-white border border-primary focus:outline-none capitalize';
+	const searchTypes = ['buy', 'rent', 'agents', 'architects', 'engineers'];
 
-	const submitHandler = () => {
+	const submitHandler = e => {
+		e.preventDefault();
 		console.log('Submit Called');
 	};
 	return (
 		<div className='self-center m-auto container'>
 			<div className='w-8/12 m-auto flex'>
-				<div className='text-center'>
-					<button className={searchType === 'buy' ? searchTypeActiveClass : searchTypeClass} onClick={() => setSearchType('buy')}>
-						Buy
-					</button>
-					{searchType === 'buy' ? <div className='arrow-up m-auto'></div> : null}
-				</div>
-				<div>
-					<button
-						className={searchType === 'rent' ? searchTypeActiveClass + ' mx-5' : searchTypeClass + ' mx-5 '}
-						onClick={() => setSearchType('rent')}>
-						Rent
-					</button>
-					{searchType === 'rent' ? <div className='arrow-up m-auto'></div> : null}
-				</div>
-				<div>
-					<button className={searchType === 'agents' ? searchTypeActiveClass : searchTypeClass} onClick={() => setSearchType('agents')}>
-						Agents
-					</button>
-					{searchType === 'agents' ? <div className='arrow-up m-auto'></div> : null}
-				</div>
+				{searchTypes.map((item, index) => (
+					<div className='text-center mr-5' key={index}>
+						<button className={searchType === item ? searchTypeActiveClass : searchTypeClass} onClick={() => setSearchType(item)}>
+							{item}
+						</button>
+						{searchType === item ? <div className='arrow-up m-auto'></div> : null}
+					</div>
+				))}
 			</div>
-			<form className='w-8/12 m-auto' onSubmit={() => submitHandler()}>
+
+			<form className='w-8/12 m-auto' onSubmit={e => submitHandler(e)}>
 				<div className='flex'>
 					<div className='rounded-l-full w-10/12 border-primary border border-r-0 overflow-hidden text-gray-500'>
 						<span className='absolute py-3 px-5 text-primary'>
@@ -55,6 +46,25 @@ const Search = () => {
 					</div>
 				</div>
 			</form>
+
+			<div className='w-8/12 m-auto py-1 flex text-sm text-primary'>
+				<div className='mr-6'>
+					All Property Types
+					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
+				</div>
+				<div className='mr-6'>
+					Beds
+					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
+				</div>
+				<div className='mr-6'>
+					Price
+					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
+				</div>
+				<div className='mr-6'>
+					Property Size
+					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
+				</div>
+			</div>
 		</div>
 	);
 };

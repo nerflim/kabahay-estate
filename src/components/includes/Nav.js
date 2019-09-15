@@ -26,8 +26,14 @@ const Nav = () => {
 						<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
 							Home Loan
 						</a>
-						<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white'>
+						<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
 							Developers
+						</a>
+						<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
+							Architects
+						</a>
+						<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
+							Engineers
 						</a>
 					</div>
 					<div>

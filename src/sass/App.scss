@@ -1,3 +1,6 @@
+// Variables
+@import 'variables';
+
 .homepage {
 	padding-top: 48px;
 }
@@ -12,5 +15,5 @@
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
 
-	border-bottom: 6px solid #0ea800;
+	border-bottom: 6px solid $primary;
 }
