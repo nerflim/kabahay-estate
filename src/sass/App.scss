@@ -1,0 +1,16 @@
+.homepage {
+	padding-top: 48px;
+}
+.homepage .header {
+	height: 350px;
+	background-image: url('/img/home-header.jpg');
+	background-color: #cbe8f8;
+}
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+
+	border-bottom: 6px solid #0ea800;
+}
