@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import FilterContainer from './FilterContainer';
 
 const Search = () => {
 	const [searchType, setSearchType] = useState('buy');
@@ -47,24 +48,7 @@ const Search = () => {
 				</div>
 			</form>
 
-			<div className='w-8/12 m-auto py-1 flex text-sm text-primary'>
-				<div className='mr-6'>
-					All Property Types
-					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
-				</div>
-				<div className='mr-6'>
-					Beds
-					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
-				</div>
-				<div className='mr-6'>
-					Price
-					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
-				</div>
-				<div className='mr-6'>
-					Property Size
-					<FontAwesomeIcon icon={faChevronDown} className='text-xs ml-1' />
-				</div>
-			</div>
+			<FilterContainer />
 		</div>
 	);
 };
