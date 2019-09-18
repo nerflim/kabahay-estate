@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 import FilterContainer from './FilterContainer';
 
 const Search = () => {
 	const [searchType, setSearchType] = useState('buy');
+	const [isFilter, setIsFilter] = useState(false);
 
 	const searchTypeClass = 'p-1 rounded-full text-sm w-24 text-primary border border-primary hover:bg-white focus:outline-none capitalize';
 	const searchTypeActiveClass = 'p-1 mb-1 bg-primary rounded-full text-sm w-24 text-white border border-primary focus:outline-none capitalize';
 	const searchTypes = ['buy', 'rent', 'agents', 'architects', 'engineers'];
+
+	const filterItemClass = 'mr-3 focus:outline-none mb-2 py-1 px-2 hover:bg-white rounded-full';
+	const filterItemActiveClass = 'mr-3 focus:outline-none mb-2 py-1 px-2 bg-white rounded-full';
 
 	const submitHandler = e => {
 		e.preventDefault();
@@ -48,7 +52,15 @@ const Search = () => {
 				</div>
 			</form>
 
-			<FilterContainer />
+			{/* filter */}
+
+			<div className='w-8/12 m-auto py-1 mt-1 flex text-sm text-primary'>
+				<button className={isFilter ? filterItemActiveClass : filterItemClass} onClick={() => setIsFilter(!isFilter)}>
+					<FontAwesomeIcon icon={faSlidersH} className='text-xs mr-1' /> Filters
+				</button>
+			</div>
+
+			{isFilter ? <FilterContainer /> : null}
 		</div>
 	);
 };
