@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faMapMarkerAlt, faBed, faBath, faCarSide, faChartArea } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faBed, faBath, faCarSide, faChartArea } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 const PropertyItem = () => {
 	return (
@@ -9,8 +10,8 @@ const PropertyItem = () => {
 				<img src='/img/home-header.jpg' />
 			</div>
 
-			<div className='flex p-3'>
-				<div className='text-gray-600 text-sm'>
+			<div className='flex p-3 text-gray-600'>
+				<div className='text-sm'>
 					<h3 className='text-gray-700 text-lg font-medium'>Lorem Ipsum Dolor Sit</h3>
 					<p className='mb-1'>
 						<FontAwesomeIcon icon={faMapMarkerAlt} size='sm' className='ml-auto' /> Quezon
@@ -32,7 +33,12 @@ const PropertyItem = () => {
 					</div>
 					<p className='font-medium text-base'>P 1,000,000.00</p>
 				</div>
-				<FontAwesomeIcon icon={faHeart} className='ml-auto' />
+
+				<div className='ml-auto'>
+					<button className='focus:outline-none'>
+						<FontAwesomeIcon icon={faHeart} />
+					</button>
+				</div>
 			</div>
 		</div>
 	);

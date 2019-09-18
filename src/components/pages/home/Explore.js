@@ -7,7 +7,7 @@ const Explore = () => {
 			<div className='container mx-auto px-3 py-5'>
 				<h3 className='text-center font-medium text-lg text-gray-500 uppercase tracking-widest'>Explore</h3>
 
-				<div className='w-full bg-gray-300 h-1 rounded-full my-3'>
+				<div className='w-full bg-gray-300 h-1 rounded-full mt-3 mb-5'>
 					<div className='w-4/12 bg-primary h-1 rounded-full'></div>
 				</div>
 
