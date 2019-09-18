@@ -6,6 +6,10 @@ module.exports = {
 					lighter: '#48D43C',
 					default: '#38a02e',
 					dark: '#638260'
+				},
+				secondary: {
+					default: '#333F48',
+					dark: '#262F35'
 				}
 			}
 		}
