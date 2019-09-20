@@ -4,6 +4,7 @@ import Explore from './Explore';
 import LatestNews from './LatestNews';
 import Partners from './Partners';
 import NewsLetter from './NewsLetter';
+import Market from './Market';
 
 const Home = () => {
 	return (
@@ -11,6 +12,7 @@ const Home = () => {
 			<Header />
 			<Explore />
 			<LatestNews />
+			<Market />
 			<Partners />
 			<NewsLetter />
 		</div>
