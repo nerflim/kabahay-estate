@@ -8,7 +8,7 @@ import { Route } from 'react-router-dom';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='App text-gray-700'>
 			<Nav />
 			<Route exact path='/' component={Home} />
 			<Route path='/search' component={Search} />
