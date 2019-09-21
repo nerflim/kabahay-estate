@@ -1,3 +1,7 @@
+.clear-nav {
+  height: 48px;
+}
+
 .property-item .thumbnail {
   height: 250px;
 }
@@ -8,10 +12,6 @@
 
 .App {
   font-family: "Poppins", sans-serif;
-}
-
-.homepage {
-  padding-top: 48px;
 }
 
 .homepage .header {

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faSlidersH } from '@fortawesome/free-solid-svg-icons';
 import FilterContainer from './FilterContainer';
 
-const Search = () => {
+const Search = props => {
 	const [searchType, setSearchType] = useState('buy');
 	const [isFilter, setIsFilter] = useState(false);
 
@@ -16,7 +16,9 @@ const Search = () => {
 
 	const submitHandler = e => {
 		e.preventDefault();
-		console.log('Submit Called');
+
+		// redirects to search page
+		props.history.push('/search');
 	};
 	return (
 		<div className='self-center m-auto container'>
@@ -40,12 +42,12 @@ const Search = () => {
 
 						<input
 							type='text'
-							className='p-3 pl-12 w-full focus:outline-none focus:text-gray-700'
+							className='p-3 pl-12 w-full focus:outline-none focus:text-gray-700 leading-none'
 							placeholder='Enter a location, project or developer name'
 						/>
 					</div>
 					<div className='w-2/12 bg-white border border-primary border-l-0 rounded-r-full overflow-hidden'>
-						<button type='submit' className='bg-primary text-white p-3 rounded-l-full w-full focus:outline-none'>
+						<button type='submit' className='bg-primary text-white p-3 rounded-l-full w-full focus:outline-none h-full'>
 							Search
 						</button>
 					</div>

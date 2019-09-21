@@ -1,12 +1,10 @@
 // Variables
 @import 'variables';
+@import 'Nav';
 @import 'Property';
 
 .App {
 	font-family: 'Poppins', sans-serif;
-}
-.homepage {
-	padding-top: 48px;
 }
 .homepage .header {
 	height: 350px;
