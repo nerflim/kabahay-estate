@@ -50,7 +50,7 @@ const SearchItem = () => {
 					<div className='h-16 w-16 rounded-full border-2 border-primary shadow' style={agentThumbnail}></div>
 					<div>
 						<span className='text-lg px-2 border-r border-gray-500'>Jane Doe</span>
-						<span className='text-sm px-2'>Filipino Homes Broker</span>
+						<span className='text-sm px-2'>Real Estate Broker</span>
 					</div>
 				</div>
 			</div>

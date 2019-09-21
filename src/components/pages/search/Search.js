@@ -1,6 +1,7 @@
 import React from 'react';
 import SearchBar from '../../SearchBar';
 import SearchItem from './SearchItem';
+import SearchFilter from './SearchFilter';
 
 const Search = () => {
 	return (
@@ -16,8 +17,12 @@ const Search = () => {
 					<SearchItem />
 					<SearchItem />
 					<SearchItem />
+					<SearchItem />
+					<SearchItem />
 				</div>
-				<div className='w-4/12 bg-blue-500 p-3'></div>
+				<div className='w-4/12 p-3'>
+					<SearchFilter />
+				</div>
 			</div>
 		</div>
 	);
