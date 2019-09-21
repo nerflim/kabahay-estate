@@ -3,7 +3,7 @@ import SearchBar from '../../SearchBar';
 import SearchItem from './SearchItem';
 import SearchFilter from './SearchFilter';
 
-const Search = () => {
+const SearchProperty = () => {
 	return (
 		<div className='container mx-auto'>
 			<SearchBar />
@@ -28,4 +28,4 @@ const Search = () => {
 	);
 };
 
-export default Search;
+export default SearchProperty;

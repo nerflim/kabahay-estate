@@ -18,7 +18,7 @@ const Search = props => {
 		e.preventDefault();
 
 		// redirects to search page
-		props.history.push('/search');
+		props.history.push('/search-property');
 	};
 	return (
 		<div className='self-center m-auto container'>
