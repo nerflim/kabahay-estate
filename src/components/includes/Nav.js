@@ -1,7 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
+	const items = [
+		{ title: 'News', url: '/' },
+		{ title: 'Home Loan', url: '/' },
+		{ title: 'Developers', url: '/' },
+		{ title: 'Architects', url: '/' },
+		{ title: 'Engineers', url: '/' }
+	];
+
 	return (
 		<React.Fragment>
 			<nav className='bg-primary p-2 shadow fixed w-full z-50'>
@@ -24,31 +32,21 @@ const Nav = () => {
 					</div>
 					<div className='w-full block flex-grow lg:flex lg:items-center lg:w-auto'>
 						<div className='text-sm lg:flex-grow'>
-							<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
-								News
-							</a>
-							<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
-								Home Loan
-							</a>
-							<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
-								Developers
-							</a>
-							<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
-								Architects
-							</a>
-							<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
-								Engineers
-							</a>
+							{items.map((item, index) => (
+								<Link to={item.url} className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8' key={index}>
+									{item.title}
+								</Link>
+							))}
 						</div>
 						<div>
-							<a href='#responsive-header' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
+							<Link to='/' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
 								Login
-							</a>
-							<a
-								href='#'
+							</Link>
+							<Link
+								to='/'
 								className='inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0'>
 								Sign up
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>

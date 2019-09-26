@@ -4,34 +4,50 @@ import { faMapMarkerAlt, faBed, faBath, faCarSide, faChartArea } from '@fortawes
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 const PropertyItem = () => {
+	const property = {
+		title: 'Lorem Ipsum Dolor Sit',
+		location: 'Quezon City',
+		bed: 5,
+		bath: 3,
+		parking: 2,
+		area: '180sqm',
+		price: 'P 1,000,000.00',
+		type: 'house',
+		favorite: false,
+		agent: {
+			name: 'Jane Doe',
+			title: 'Real Estate Broker'
+		}
+	};
+
 	return (
 		<div className='bg-white rounded-lg overflow-hidden border property-item'>
 			<div className='thumbnail overflow-hidden'>
-				<img src='/img/home-header.jpg' />
+				<img src='/img/home-header.jpg' alt={property.title} />
 			</div>
 
 			<div className='flex p-3 text-gray-600'>
 				<div className='text-sm'>
-					<h3 className='text-gray-700 text-lg font-medium'>Lorem Ipsum Dolor Sit</h3>
+					<h3 className='text-gray-700 text-lg font-medium'>{property.title}</h3>
 					<p className='mb-1'>
-						<FontAwesomeIcon icon={faMapMarkerAlt} size='sm' className='ml-auto' /> Quezon
+						<FontAwesomeIcon icon={faMapMarkerAlt} size='sm' className='ml-auto' /> {property.location}
 					</p>
 					<div className='mb-1'>
 						<span className='inline-block mr-3'>
-							<FontAwesomeIcon icon={faBed} /> 5
+							<FontAwesomeIcon icon={faBed} /> {property.bed}
 						</span>
 						<span className='inline-block mr-3'>
-							<FontAwesomeIcon icon={faBath} /> 3
+							<FontAwesomeIcon icon={faBath} /> {property.bath}
 						</span>
 						<span className='inline-block mr-3'>
-							<FontAwesomeIcon icon={faCarSide} /> 2
+							<FontAwesomeIcon icon={faCarSide} /> {property.parking}
 						</span>
 						<span className='inline-block mr-3'>
-							<FontAwesomeIcon icon={faChartArea} /> 180sqm
+							<FontAwesomeIcon icon={faChartArea} /> {property.area}
 						</span>
-						<span className='inline-block bg-gray-600 text-white uppercase px-2 rounded-full text-xs'>HOUSE</span>
+						<span className='inline-block bg-gray-600 text-white uppercase px-2 rounded-full text-xs'>{property.type}</span>
 					</div>
-					<p className='font-medium text-base'>P 1,000,000.00</p>
+					<p className='font-medium text-base'>{property.price}</p>
 				</div>
 
 				<div className='ml-auto'>

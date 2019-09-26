@@ -8,21 +8,21 @@ const LatestNews = () => {
 				<div className='flex'>
 					<div className='w-1/3 px-2'>
 						<div style={{ height: '250px' }} className='overflow-hidden rounded-lg shadow-md'>
-							<img src='/img/home-header.jpg' />
+							<img src='/img/home-header.jpg' alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' />
 						</div>
 						<h3 className='text-lg font-medium my-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 						<p className='text-xs opacity-50'>Maecenas nec nulla mi. Nulla odio nunc, euismod nec eleifend vehicula, tristique eu est...</p>
 					</div>
 					<div className='w-1/3 px-2'>
 						<div style={{ height: '250px' }} className='overflow-hidden rounded-lg shadow-md'>
-							<img src='/img/home-header.jpg' />
+							<img src='/img/home-header.jpg' alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' />
 						</div>
 						<h3 className='text-lg font-medium my-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 						<p className='text-xs opacity-50'>Maecenas nec nulla mi. Nulla odio nunc, euismod nec eleifend vehicula, tristique eu est...</p>
 					</div>
 					<div className='w-1/3 px-2'>
 						<div style={{ height: '250px' }} className='overflow-hidden rounded-lg shadow-md'>
-							<img src='/img/home-header.jpg' />
+							<img src='/img/home-header.jpg' alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' />
 						</div>
 						<h3 className='text-lg font-medium my-1'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
 						<p className='text-xs opacity-50'>Maecenas nec nulla mi. Nulla odio nunc, euismod nec eleifend vehicula, tristique eu est...</p>

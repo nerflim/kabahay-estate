@@ -2,8 +2,11 @@ import React from 'react';
 import SearchBar from '../../SearchBar';
 import SearchItem from './SearchItem';
 import SearchFilter from './SearchFilter';
+import { withRouter } from 'react-router';
 
 const SearchProperty = () => {
+	const SearchItemWithRouter = withRouter(SearchItem);
+
 	return (
 		<div className='container mx-auto'>
 			<SearchBar />
@@ -35,11 +38,11 @@ const SearchProperty = () => {
 
 			<div className='flex'>
 				<div className='w-9/12 p-3'>
-					<SearchItem />
-					<SearchItem />
-					<SearchItem />
-					<SearchItem />
-					<SearchItem />
+					<SearchItemWithRouter />
+					<SearchItemWithRouter />
+					<SearchItemWithRouter />
+					<SearchItemWithRouter />
+					<SearchItemWithRouter />
 				</div>
 				<div className='w-4/12 p-3'>
 					<SearchFilter />

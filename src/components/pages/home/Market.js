@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Market = () => {
 	return (
@@ -99,9 +100,9 @@ const Market = () => {
 						<h3 className='text-xl tracking-wider'>Explore home loans</h3>
 						<p className='text-sm w-1/2 mx-auto leading-none mt-2'>With over 35+ trusted lenders, we can help you find a loan</p>
 						<div className='h-px my-4 bg-primary w-12 mx-auto'></div>
-						<a href='#' className='text-sm text-primary hover:text-primary-dark tracking-wider'>
+						<Link to='/' className='text-sm text-primary hover:text-primary-dark tracking-wider'>
 							EXPLORE NOW
-						</a>
+						</Link>
 					</div>
 				</div>
 				<div className='w-1/3'>
@@ -109,9 +110,9 @@ const Market = () => {
 						<h3 className='text-xl tracking-wider'>Keep in touch</h3>
 						<p className='text-sm w-1/2 mx-auto leading-none mt-2'>Never miss a thing, subscribe to our newsletter for updates!</p>
 						<div className='h-px my-4 bg-primary w-12 mx-auto'></div>
-						<a href='#' className='text-sm text-primary hover:text-primary-dark tracking-wider'>
+						<Link to='#' className='text-sm text-primary hover:text-primary-dark tracking-wider'>
 							SUBSCRIBE NOW
-						</a>
+						</Link>
 					</div>
 				</div>
 				<div className='w-1/3'>
@@ -119,9 +120,9 @@ const Market = () => {
 						<h3 className='text-xl tracking-wider'>Track your property</h3>
 						<p className='text-sm w-1/2 mx-auto leading-none mt-2'>Track the estimated value of your home and stay in touch with your local market</p>
 						<div className='h-px my-4 bg-primary w-12 mx-auto'></div>
-						<a href='#' className='text-sm text-primary hover:text-primary-dark tracking-wider'>
+						<Link to='#' className='text-sm text-primary hover:text-primary-dark tracking-wider'>
 							LEARN MORE
-						</a>
+						</Link>
 					</div>
 				</div>
 			</div>
