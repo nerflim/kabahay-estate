@@ -10,7 +10,7 @@ const Agent = props => {
 	};
 
 	return (
-		<div className='border rounded-lg overflow-hidden'>
+		<div className='border rounded-lg overflow-hidden shadow'>
 			<div className='bg-primary p-3 text-white flex items-center'>
 				<div className='h-16 w-16 rounded-full border-2 border-white shadow mr-3' style={agentThumbnail}></div>
 				<div>
@@ -18,8 +18,8 @@ const Agent = props => {
 					<p className='text-sm'>{props.agent.title}</p>
 				</div>
 			</div>
-			<div className='p-3'>
-				<ul className='text-sm'>
+			<div className='p-3 text-sm'>
+				<ul>
 					<li>
 						<FontAwesomeIcon icon={faPhoneAlt} size='sm' className='mr-3' /> {props.agent.mobile}
 					</li>
@@ -27,9 +27,33 @@ const Agent = props => {
 						<FontAwesomeIcon icon={faEnvelope} size='sm' className='mr-3' /> {props.agent.email}
 					</li>
 				</ul>
-				<Link to='/' className='p-2 border rounded-full border-primary text-center w-full block text-sm text-primary my-3'>
+				<Link to='/' className='p-2 border rounded-full border-primary text-center w-full block text-primary mt-3 mb-5'>
 					Visit Agent's Profile
 				</Link>
+				<hr />
+
+				<div className='mt-5'>
+					<p className='mb-3'>Ask about the property</p>
+					<form onSubmit={e => e.preventDefault()}>
+						<div className='mb-3'>
+							<input type='text' className='border rounded-full focus:outline-none px-3 py-2 w-full' placeholder='Full Name' />
+						</div>
+						<div className='mb-3'>
+							<input type='text' className='border rounded-full focus:outline-none px-3 py-2 w-full' placeholder='Phone Number' />
+						</div>
+						<div className='mb-3'>
+							<input type='email' className='border rounded-full focus:outline-none px-3 py-2 w-full' placeholder='Email Address' />
+						</div>
+						<div className='mb-3'>
+							<textarea rows='4' className='border rounded-lg focus:outline-none px-3 py-2 w-full' placeholder='Your message' />
+						</div>
+						<div className='mb-3'>
+							<button type='submit' className='rounded-full w-full text-white bg-primary px-3 py-2'>
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	);
