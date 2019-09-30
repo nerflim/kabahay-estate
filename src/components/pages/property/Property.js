@@ -5,6 +5,7 @@ import { faMapMarkerAlt, faBed, faBath, faCarSide, faChartArea } from '@fortawes
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Agent from './Agent';
 import PropertyItem from '../../PropertyItem';
+import Appointment from './Appointment';
 
 const Property = props => {
 	const information = {
@@ -79,15 +80,9 @@ const Property = props => {
 							lacus, ultricies quis purus nec, blandit auctor est.
 						</p>
 					</div>
-					<div className='mb-5'>
-						<h3 className='text-xl mb-2'>Make an appointment</h3>
-						<div className='flex'>
-							<div className='h-64 bg-blue-400 rounded-lg flex-1'></div>
-							<div className='flex-1'>
-								<h3 className='text-lg mb-2 text-center'>Select available time</h3>
-							</div>
-						</div>
-					</div>
+
+					<Appointment />
+
 					<div className='mb-5'>
 						<h3 className='text-xl mb-2'>Other properties for sale near this area</h3>
 						<div className='flex'>
