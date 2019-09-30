@@ -58,7 +58,7 @@ const Property = props => {
 			</div>
 			<div className='container mx-auto flex'>
 				<div className='w-2/3 p-3 text-sm'>
-					<div className='mb-5'>
+					<div className='mb-8'>
 						<h3 className='text-xl mb-2'>Property Description</h3>
 						<p className='mb-3'>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula eget nisi nec molestie. Maecenas sed libero non risus pharetra
@@ -83,7 +83,7 @@ const Property = props => {
 
 					<Appointment />
 
-					<div className='mb-5'>
+					<div className='mb-8'>
 						<h3 className='text-xl mb-2'>Other properties for sale near this area</h3>
 						<div className='flex'>
 							<div className='px-2'>

@@ -1,12 +1,15 @@
 import React from 'react';
+import Calendar from 'react-calendar';
 
 const Appointment = () => {
 	const availableTime = ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'];
 	return (
-		<div className='mb-5'>
+		<div className='mb-8'>
 			<h3 className='text-xl mb-2'>Make an appointment</h3>
 			<div className='flex'>
-				<div className='h-64 bg-blue-400 rounded-lg flex-1'></div>
+				<div className='flex-1'>
+					<Calendar className='w-full shadow rounded-lg border-gray-500' />
+				</div>
 				<div className='flex-1 px-3 text-sm'>
 					<h3 className='text-lg mb-2 text-center'>Select available time</h3>
 					<div className='flex flex-wrap'>
