@@ -10,6 +10,24 @@
   min-height: 250px;
 }
 
+.react-calendar .react-calendar__tile:enabled:hover {
+  background-color: white;
+  border: 1px solid #38a02e;
+  margin: -1px 0px;
+}
+
+.react-calendar .react-calendar__tile.react-calendar__tile--active {
+  background-color: #38a02e;
+  border: 1px solid #38a02e;
+  margin: -1px 0px;
+}
+
+.react-calendar .react-calendar__tile.react-calendar__tile--active:enabled:hover,
+.react-calendar .react-calendar__tile.react-calendar__tile--active:enabled:focus {
+  background-color: #38a02e;
+  outline: none;
+}
+
 .App {
   font-family: "Poppins", sans-serif;
 }

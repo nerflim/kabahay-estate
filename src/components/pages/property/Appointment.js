@@ -8,20 +8,24 @@ const Appointment = () => {
 			<h3 className='text-xl mb-2'>Make an appointment</h3>
 			<div className='flex'>
 				<div className='flex-1'>
-					<Calendar className='w-full shadow rounded-lg border-gray-500' />
+					<Calendar className='shadow rounded-lg border-gray-500' value={new Date()} hover='bg-green-500' calendarType='US' />
 				</div>
 				<div className='flex-1 px-3 text-sm'>
 					<h3 className='text-lg mb-2 text-center'>Select available time</h3>
 					<div className='flex flex-wrap'>
 						{availableTime.map((item, index) => (
 							<div className='w-1/3 px-2 mb-3' key={index}>
-								<button type='button' className='py-1 px-3 text-center w-full border rounded-full shadow border-gray-500 focus:outline-none'>
+								<button
+									type='button'
+									className='py-1 px-3 text-center w-full border rounded-full hover:shadow border-gray-500 focus:outline-none hover:border-primary'>
 									{item}
 								</button>
 							</div>
 						))}
 					</div>
-					<button type='button' className='w-full rounded-full text-white bg-primary shadow focus:outline-none py-1 px-3 mt-3'>
+					<button
+						type='button'
+						className='w-full rounded-full text-white bg-primary shadow focus:outline-none py-1 px-3 mt-3 border border-primary hover:text-primary hover:bg-white'>
 						Make an appointment
 					</button>
 				</div>

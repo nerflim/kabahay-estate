@@ -1,0 +1,23 @@
+.react-calendar .react-calendar__tile {
+	&:enabled {
+		&:hover {
+			background-color: white;
+			border: 1px solid $primary;
+			margin: -1px 0px;
+		}
+	}
+
+	&.react-calendar__tile--active {
+		background-color: $primary;
+		border: 1px solid $primary;
+		margin: -1px 0px;
+
+		&:enabled {
+			&:hover,
+			&:focus {
+				background-color: $primary;
+				outline: none;
+			}
+		}
+	}
+}
