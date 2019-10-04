@@ -7,6 +7,7 @@ import Agent from './Agent';
 import PropertyItem from '../../PropertyItem';
 import Appointment from './Appointment';
 import Location from './Location';
+import Gallery from './Gallery';
 
 const Property = props => {
 	const information = {
@@ -33,7 +34,9 @@ const Property = props => {
 				<SearchBar />
 			</div>
 			<div className='flex mb-5 bg-gray-200'>
-				<div className='bg-yellow-300 w-2/3 p-3'>Photo slider here</div>
+				<div className='w-2/3'>
+					<Gallery />
+				</div>
 				<div className='w-1/3 p-3'>
 					<h1 className='text-2xl mb-3'>{information.title}</h1>
 					<h3 className='text-xl mb-5'>{information.price}</h3>
