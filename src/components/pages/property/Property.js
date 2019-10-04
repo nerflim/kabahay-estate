@@ -6,6 +6,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Agent from './Agent';
 import PropertyItem from '../../PropertyItem';
 import Appointment from './Appointment';
+import Location from './Location';
 
 const Property = props => {
 	const information = {
@@ -58,6 +59,8 @@ const Property = props => {
 			</div>
 			<div className='container mx-auto flex'>
 				<div className='w-2/3 p-3 text-sm'>
+					<Location />
+
 					<div className='mb-8'>
 						<h3 className='text-xl mb-2'>Property Description</h3>
 						<p className='mb-3'>

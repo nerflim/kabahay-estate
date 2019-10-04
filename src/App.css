@@ -10,6 +10,10 @@
   min-height: 250px;
 }
 
+.map-container {
+  height: 350px;
+}
+
 .react-calendar .react-calendar__tile:enabled:hover {
   background-color: white;
   border: 1px solid #38a02e;
