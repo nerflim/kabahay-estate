@@ -15,7 +15,7 @@ const Footer = () => {
 		{ name: 'Customer Service', items: ['How it works', 'Why Partner with us?', 'Contact us', 'FAQs', 'Video Tutorials', 'Broker Academy'] }
 	];
 	return (
-		<footer>
+		<footer className='w-full'>
 			<div className='bg-secondary py-12 text-gray-300 text-sm flex items-center'>
 				<div className='container mx-auto'>
 					<div className='flex'>

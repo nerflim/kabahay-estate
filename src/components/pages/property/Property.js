@@ -1,13 +1,11 @@
 import React from 'react';
 import SearchBar from '../../SearchBar';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faBed, faBath, faCarSide, faChartArea } from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import Agent from './Agent';
 import PropertyItem from '../../PropertyItem';
 import Appointment from './Appointment';
 import Location from './Location';
 import Gallery from './Gallery';
+import Info from './Info';
 
 const Property = props => {
 	const information = {
@@ -33,31 +31,12 @@ const Property = props => {
 			<div className='container mx-auto'>
 				<SearchBar />
 			</div>
-			<div className='flex mb-5 border-t border-b shadow-lg'>
-				<div className='w-2/3'>
+			<div className='flex flex-col md:flex-row mb-5 border-t border-b shadow-lg'>
+				<div className='md:w-2/3 w-full'>
 					<Gallery />
 				</div>
-				<div className='w-1/3 p-4'>
-					<h1 className='text-2xl mb-3'>{information.title}</h1>
-					<h3 className='text-xl mb-5'>{information.price}</h3>
-					<p>
-						<FontAwesomeIcon icon={faMapMarkerAlt} size='sm' /> {information.location}
-					</p>
-					<ul className='mt-5'>
-						<li>HOUSE</li>
-						<li>
-							<FontAwesomeIcon icon={faBed} /> {information.bed}
-						</li>
-						<li>
-							<FontAwesomeIcon icon={faBath} /> {information.bath}
-						</li>
-						<li>
-							<FontAwesomeIcon icon={faCarSide} /> {information.parking}
-						</li>
-						<li>
-							<FontAwesomeIcon icon={faChartArea} /> {information.area}
-						</li>
-					</ul>
+				<div className='md:w-1/3 p-4 w-full'>
+					<Info info={information} />
 				</div>
 			</div>
 			<div className='container mx-auto flex'>
