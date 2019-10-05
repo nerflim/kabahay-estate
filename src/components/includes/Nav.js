@@ -30,7 +30,7 @@ const Nav = () => {
 							</svg>
 						</button>
 					</div>
-					<div className='w-full block flex-grow lg:flex lg:items-center lg:w-auto'>
+					<div className='w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden'>
 						<div className='text-sm lg:flex-grow'>
 							{items.map((item, index) => (
 								<Link to={item.url} className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8' key={index}>

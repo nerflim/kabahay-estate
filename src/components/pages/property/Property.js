@@ -39,8 +39,8 @@ const Property = props => {
 					<Info info={information} />
 				</div>
 			</div>
-			<div className='container mx-auto flex'>
-				<div className='w-2/3 p-3 text-sm'>
+			<div className='container mx-auto flex lg:flex-row flex-col'>
+				<div className='lg:w-2/3 w-full p-3 text-sm'>
 					<Location />
 
 					<div className='mb-8'>
@@ -80,7 +80,7 @@ const Property = props => {
 						</div>
 					</div>
 				</div>
-				<div className='w-1/3 p-3'>
+				<div className='lg:w-1/3 w-full p-3'>
 					<Agent agent={information.agent} />
 				</div>
 			</div>
