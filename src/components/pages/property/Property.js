@@ -32,7 +32,7 @@ const Property = props => {
 				<SearchBar />
 			</div>
 			<div className='flex flex-col md:flex-row mb-5 border-t border-b shadow-lg'>
-				<div className='md:w-2/3 w-full'>
+				<div className='md:w-2/3 w-full md:border-r md:border-b-0 border-b'>
 					<Gallery />
 				</div>
 				<div className='md:w-1/3 p-4 w-full'>
@@ -68,13 +68,13 @@ const Property = props => {
 
 					<Appointment />
 
-					<div className='mb-8'>
+					<div className='mb-4'>
 						<h3 className='text-xl mb-2'>Other properties for sale near this area</h3>
-						<div className='flex'>
-							<div className='px-2'>
+						<div className='flex flex-col md:flex-row'>
+							<div className='px-2 mb-3 md:mb-0'>
 								<PropertyItem />
 							</div>
-							<div className='px-2'>
+							<div className='px-2 mb-3 md:mb-0'>
 								<PropertyItem />
 							</div>
 						</div>

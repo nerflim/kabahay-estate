@@ -9,7 +9,7 @@ const Appointment = () => {
 	const activeTimeClass = 'py-1 px-3 text-center w-full border rounded-full border-primary bg-white text-primary focus:outline-none';
 
 	return (
-		<div className='mb-8'>
+		<div className='mb-8 appointment-container'>
 			<h3 className='text-xl mb-2'>Make an appointment</h3>
 			<div className='flex flex-col md:flex-row'>
 				<div className='mx-auto'>

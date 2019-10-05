@@ -29,20 +29,24 @@
   margin: auto;
 }
 
-.react-calendar .react-calendar__tile:enabled:hover {
+.appointment-container .react-calendar {
+  width: 100%;
+}
+
+.appointment-container .react-calendar .react-calendar__tile:enabled:hover {
   background-color: white;
   border: 1px solid #38a02e;
   margin: -1px 0px;
 }
 
-.react-calendar .react-calendar__tile.react-calendar__tile--active {
+.appointment-container .react-calendar .react-calendar__tile.react-calendar__tile--active {
   background-color: #38a02e;
   border: 1px solid #38a02e;
   margin: -1px 0px;
 }
 
-.react-calendar .react-calendar__tile.react-calendar__tile--active:enabled:hover,
-.react-calendar .react-calendar__tile.react-calendar__tile--active:enabled:focus {
+.appointment-container .react-calendar .react-calendar__tile.react-calendar__tile--active:enabled:hover,
+.appointment-container .react-calendar .react-calendar__tile.react-calendar__tile--active:enabled:focus {
   background-color: #38a02e;
   outline: none;
 }
