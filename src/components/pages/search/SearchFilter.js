@@ -10,13 +10,16 @@ const SearchFilter = () => {
 			<div className='flex mb-5'>
 				<button
 					type='button'
-					className='p-3 rounded-full bg-white border border-primary text-primary hover:bg-primary hover:text-white w-full text-sm'>
+					className='p-3 rounded-full bg-white border border-primary text-primary hover:bg-primary hover:text-white w-full text-sm focus:outline-none'>
 					<FontAwesomeIcon icon={faStar} className='mr-2' size='sm' /> Save Search
+				</button>
+				<button type='button' className='p-3 rounded-full bg-white border flex-shrink-0 text-sm visible md:hidden focus:outline-none ml-3'>
+					<FontAwesomeIcon icon={faStar} className='mr-2' size='sm' /> Filters
 				</button>
 			</div>
 
-			<p className='text-lg font-medium'>Filters</p>
-			<div className='p-3 mt-3 rounded-lg border shadow'>
+			<p className='text-lg font-medium hidden md:block'>Filters</p>
+			<div className='p-3 mt-3 rounded-lg border shadow text-sm hidden md:block'>
 				<div className='mb-3'>
 					<label>Offer Type:</label>
 					<div>
