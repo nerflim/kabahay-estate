@@ -33,11 +33,11 @@ const Property = props => {
 			<div className='container mx-auto'>
 				<SearchBar />
 			</div>
-			<div className='flex mb-5 bg-gray-200'>
+			<div className='flex mb-5 border-t border-b shadow-lg'>
 				<div className='w-2/3'>
 					<Gallery />
 				</div>
-				<div className='w-1/3 p-3'>
+				<div className='w-1/3 p-4'>
 					<h1 className='text-2xl mb-3'>{information.title}</h1>
 					<h3 className='text-xl mb-5'>{information.price}</h3>
 					<p>

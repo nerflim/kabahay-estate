@@ -16,6 +16,19 @@
   height: 350px;
 }
 
+.property-gallery .thumbnail-item {
+  max-height: 65px;
+  margin-bottom: 3px;
+  overflow: hidden;
+}
+
+.property-gallery .gallery-item img {
+  max-height: 450px;
+  height: 450px;
+  width: auto;
+  margin: auto;
+}
+
 .react-calendar .react-calendar__tile:enabled:hover {
   background-color: white;
   border: 1px solid #38a02e;

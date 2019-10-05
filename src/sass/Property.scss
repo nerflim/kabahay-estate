@@ -11,3 +11,19 @@
 .map-container {
 	height: 350px;
 }
+
+.property-gallery {
+	.thumbnail-item {
+		max-height: 65px;
+		margin-bottom: 3px;
+		overflow: hidden;
+	}
+	.gallery-item {
+		img {
+			max-height: 450px;
+			height: 450px;
+			width: auto;
+			margin: auto;
+		}
+	}
+}
