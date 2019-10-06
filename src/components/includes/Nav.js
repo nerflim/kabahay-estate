@@ -46,8 +46,8 @@ const Nav = () => {
 								Login
 							</Link>
 							<Link
-								to='/'
-								className='inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0'>
+								to='/sign-up'
+								className='inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 focus:bg-transparent focus:text-white focus:border-white focus:outline-none'>
 								Sign up
 							</Link>
 						</div>
