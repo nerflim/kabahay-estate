@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt, faBed, faBath, faCarSide, faChartArea } from '@fortawesome/free-solid-svg-icons';
+import { faMapMarkerAlt, faBed, faBath, faCarSide, faChartArea, faHeart as faHeartSolid } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 const SearchItem = props => {
+	const [favorite, setFavorite] = useState(false);
 	const agentThumbnail = {
 		background: 'url(/img/jane-doe.jpg)',
 		backgroundPosition: 'center'
@@ -64,8 +65,8 @@ const SearchItem = props => {
 					</div>
 
 					<div className='ml-auto'>
-						<button className='focus:outline-none'>
-							<FontAwesomeIcon icon={faHeart} />
+						<button className='focus:outline-none' onClick={() => setFavorite(!favorite)}>
+							{favorite ? <FontAwesomeIcon icon={faHeartSolid} className='text-primary' /> : <FontAwesomeIcon icon={faHeart} />}
 						</button>
 					</div>
 				</div>
