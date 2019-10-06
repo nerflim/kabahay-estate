@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = props => {
 	const [show, setShow] = useState(false);
 	const items = [
 		{ title: 'News', url: '/' },
@@ -13,7 +13,7 @@ const Nav = () => {
 
 	return (
 		<React.Fragment>
-			<nav className='bg-primary p-2 shadow fixed w-full z-50'>
+			<nav className='bg-primary p-2 shadow fixed w-full z-40'>
 				<div className='container m-auto flex items-center justify-between flex-wrap'>
 					<Link to='/'>
 						<div className='flex items-center flex-shrink-0 text-white mr-8'>
@@ -42,9 +42,9 @@ const Nav = () => {
 							))}
 						</div>
 						<div>
-							<Link to='/' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8'>
+							<button type='button' className='block mt-4 lg:inline-block lg:mt-0 text-white hover:text-white mr-8' onClick={() => props.login()}>
 								Login
-							</Link>
+							</button>
 							<Link
 								to='/sign-up'
 								className='inline-block text-sm px-4 py-2 leading-none border rounded-full text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0 focus:bg-transparent focus:text-white focus:border-white focus:outline-none'>
