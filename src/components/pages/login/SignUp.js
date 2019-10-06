@@ -6,9 +6,12 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const SignUp = () => {
+	const banner = {
+		backgroundImage: "url('/img/signup-banner.jpg')"
+	};
 	return (
 		<div className='flex text-sm min-h-screen'>
-			<div className='w-3/5 bg-blue-500'></div>
+			<div className='w-3/5 bg-gray-400 bg-cover' style={banner}></div>
 			<div className='p-5 w-2/5'>
 				<div className='flex items-center flex-shrink-0 text-primary'>
 					<svg className='fill-current h-8 w-8 mr-2' width='54' height='54' viewBox='0 0 54 54' xmlns='http://www.w3.org/2000/svg'>
