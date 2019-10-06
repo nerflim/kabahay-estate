@@ -10,6 +10,12 @@ module.exports = {
 				secondary: {
 					default: '#333F48',
 					dark: '#262F35'
+				},
+				facebook: {
+					default: '#355089'
+				},
+				google: {
+					default: '#ea4335'
 				}
 			}
 		}
