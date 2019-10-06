@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-regular-svg-icons';
 
 const SearchFilter = () => {
+	const [isFilter, setIsFilter] = useState(false);
+
+	const activeFilterClass = 'border-primary bg-primary text-white';
 	const propertyTypes = ['Any', 'Commercial', 'Land', 'House', 'Apartment', 'Condominium', 'Forclosures'];
 	const bedrooms = [1, 2, 3, 4, 5];
 	return (
@@ -13,13 +16,18 @@ const SearchFilter = () => {
 					className='p-3 rounded-full bg-white border border-primary text-primary hover:bg-primary hover:text-white w-full text-sm focus:outline-none'>
 					<FontAwesomeIcon icon={faStar} className='mr-2' size='sm' /> Save Search
 				</button>
-				<button type='button' className='p-3 rounded-full bg-white border flex-shrink-0 text-sm visible md:hidden focus:outline-none ml-3'>
+				<button
+					type='button'
+					className={`p-3 rounded-full border flex-shrink-0 text-sm visible md:hidden focus:outline-none ml-3 ${
+						isFilter ? activeFilterClass : ' bg-white'
+					}`}
+					onClick={() => setIsFilter(!isFilter)}>
 					<FontAwesomeIcon icon={faStar} className='mr-2' size='sm' /> Filters
 				</button>
 			</div>
 
-			<p className='text-lg font-medium hidden md:block'>Filters</p>
-			<div className='p-3 mt-3 rounded-lg border shadow text-sm hidden md:block'>
+			<p className={`text-lg font-medium md:block ${!isFilter ? 'hidden' : ''}`}>Filters</p>
+			<div className={`p-3 mt-3 rounded-lg border shadow text-sm md:block ${!isFilter ? 'hidden' : ''}`}>
 				<div className='mb-3'>
 					<label>Offer Type:</label>
 					<div>

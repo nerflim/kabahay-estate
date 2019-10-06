@@ -70,10 +70,10 @@ const SearchItem = props => {
 					</div>
 				</div>
 				<div className='flex p-3 items-center w-full self-end'>
-					<div className='h-16 w-16 rounded-full border-2 border-primary shadow' style={agentThumbnail}></div>
+					<div className='sm:h-16 sm:w-16 h-12 w-12 rounded-full border-2 border-primary shadow flex-shrink-0' style={agentThumbnail}></div>
 					<div>
-						<span className='text-lg px-2 border-r border-gray-500'>{property.agent.name}</span>
-						<span className='text-sm px-2'>{property.agent.title}</span>
+						<span className='text-lg px-2 sm:border-r border-gray-500'>{property.agent.name}</span>
+						<span className='text-sm px-2 block sm:inline-block'>{property.agent.title}</span>
 					</div>
 				</div>
 			</div>
