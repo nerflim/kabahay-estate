@@ -27,7 +27,7 @@ const Agent = props => {
 						<FontAwesomeIcon icon={faEnvelope} size='sm' className='mr-3' /> {props.agent.email}
 					</li>
 				</ul>
-				<Link to='/' className='p-2 border rounded-full border-primary text-center w-full block text-primary mt-3 mb-5'>
+				<Link to='/agents/view' className='p-2 border rounded-full border-primary text-center w-full block text-primary mt-3 mb-5'>
 					Visit Agent's Profile
 				</Link>
 				<hr />
