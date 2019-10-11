@@ -18,7 +18,7 @@ const Search = props => {
 		e.preventDefault();
 
 		// redirects to search page
-		props.history.push('/search/property');
+		searchType === 'buy' ? props.history.push('/search/property') : props.history.push('/search/agent');
 	};
 	return (
 		<div className='self-center m-auto container'>
