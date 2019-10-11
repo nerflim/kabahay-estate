@@ -11,6 +11,7 @@ const SearchBar = props => {
 
 	return (
 		<form className='md:w-8/12 w-full px-3 md:px-0 m-auto py-8 text-sm' onSubmit={e => submitHandler(e)}>
+			<p className='text-xs mb-2 ml-5 text-gray-500'>Property</p>
 			<div className='flex'>
 				<div className='rounded-l-full w-full border-primary border border-r-0 overflow-hidden text-gray-500'>
 					<span className='absolute py-3 px-5 text-primary'>

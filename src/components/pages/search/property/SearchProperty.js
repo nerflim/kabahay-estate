@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from '../../SearchBar';
+import SearchBar from '../../../SearchBar';
 import SearchItem from './SearchItem';
 import SearchFilter from './SearchFilter';
 import { withRouter } from 'react-router';
