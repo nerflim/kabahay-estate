@@ -25,7 +25,7 @@ const PropertyItem = () => {
 	return (
 		<div className='bg-white rounded-lg overflow-hidden border property-item'>
 			<div className='thumbnail overflow-hidden'>
-				<Link to='/search-property/view'>
+				<Link to='/search/property/view'>
 					<img src='/img/home-header.jpg' alt={property.title} />
 				</Link>
 			</div>
@@ -33,7 +33,7 @@ const PropertyItem = () => {
 			<div className='flex p-3 text-gray-600'>
 				<div className='text-sm'>
 					<h3 className='text-gray-700 text-lg font-medium'>
-						<Link to='/search-property/view'>{property.title}</Link>
+						<Link to='/search/property/view'>{property.title}</Link>
 					</h3>
 					<p className='mb-1'>
 						<FontAwesomeIcon icon={faMapMarkerAlt} size='sm' className='ml-auto' /> {property.location}

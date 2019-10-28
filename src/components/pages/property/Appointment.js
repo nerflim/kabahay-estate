@@ -6,7 +6,7 @@ const Appointment = () => {
 	const availableTime = ['09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM', '04:00 PM'];
 
 	const timeClass = 'py-1 px-3 text-center w-full border rounded-full hover:shadow border-gray-500 focus:outline-none hover:border-primary';
-	const activeTimeClass = 'py-1 px-3 text-center w-full border rounded-full border-primary bg-white text-primary focus:outline-none';
+	const activeTimeClass = 'py-1 px-3 text-center w-full border rounded-full border-primary bg-primary text-white focus:outline-none';
 
 	return (
 		<div className='mb-8 appointment-container'>

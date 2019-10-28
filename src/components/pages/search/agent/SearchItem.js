@@ -4,7 +4,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 const SearchItem = () => {
 	return (
-		<div className='border rounded-lg p-5 text-sm mb-6'>
+		<div className='border rounded-lg p-5 text-sm mb-6 bg-white'>
 			<div className='flex w-full'>
 				<img src='/img/jane-doe.jpg' alt='Jane Doe' className='w-20 h-20 rounded-full object-cover' />
 				<div className='px-5'>

@@ -27,7 +27,10 @@ const SearchFilter = () => {
 			</div>
 
 			<p className={`text-lg font-medium md:block ${!isFilter ? 'hidden' : ''}`}>Filters</p>
-			<div className={`p-3 mt-3 rounded-lg border shadow text-sm md:block ${!isFilter ? 'hidden' : ''}`}>
+
+			{/* filter card */}
+
+			<div className={`p-3 mt-3 rounded-lg border shadow text-sm md:block bg-white ${!isFilter ? 'hidden' : ''}`}>
 				<div className='mb-3'>
 					<label>Offer Type:</label>
 					<div>
