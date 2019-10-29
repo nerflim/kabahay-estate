@@ -30,7 +30,7 @@ const SearchItem = props => {
 	};
 
 	return (
-		<div className='bg-white rounded-lg overflow-hidden border property-item lg:flex md:block mb-5 shadow'>
+		<div className='bg-white rounded-lg overflow-hidden border property-item lg:flex md:block mb-5'>
 			<div className='thumbnail overflow-hidden lg:w-5/12 md:w-full'>
 				<Link to={`${match.url}/view`}>
 					<img src='/img/home-header.jpg' alt={property.title} />
